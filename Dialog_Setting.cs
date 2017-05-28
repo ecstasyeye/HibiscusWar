@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using Fungus;
 
 public class Dialog_Setting : MonoBehaviour
 {
@@ -27,11 +26,6 @@ public class Dialog_Setting : MonoBehaviour
         Button_OK.onClick.AddListener(delegate (){this.OnClick(Button_OK.gameObject);});
         Screen.fullScreen = IsFullScreen;
     }
-	
-	// Update is called once per frame
-	void Update ()
-    {
-    }
 
     void Toggle_FullScreen_OnValueChanged(bool check)
     {
@@ -53,16 +47,13 @@ public class Dialog_Setting : MonoBehaviour
 
     void Slider_Music_OnValueChanged(float value)
     {
-        //Debug.Log("Slider_Music_OnValueChanged = "+ value);
-        //AudioManagerEx.Instance.SetAudioVolume(value);
-        FungusManager.Instance.MusicManager.SetAudioVolume(value,0,null);
+        AudioManagerEx.Instance.SetAudioVolume(value);
     }
 
     void Slider_Sound_OnValueChanged(float value)
     {
         AudioManagerEx.Instance.soundvolume = value;
-        //AudioManagerEx.Instance.PlaySound(soundClip);
-        FungusManager.Instance.MusicManager.PlaySound(soundClip, value);
+        AudioManagerEx.Instance.PlaySound(soundClip);
     }
 
     public void OnClick(GameObject sender)
@@ -70,8 +61,6 @@ public class Dialog_Setting : MonoBehaviour
         switch (sender.name)
         {
             case "Button_OK":
-                UIManager.Instance.m_UIList["SettingDialog"].SetActive(false);
-                UIManager.Instance.m_UIList["SubMenu"].SetActive(true);
                 break;
         }
     }

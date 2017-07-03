@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1149318391
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d4d23bb4bee7e4013d8421f44e541644
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cd5c5aefe28bd706d3e9fa3ed08e3c18
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: a27bc74ad1b012b4e9f9db514030f386, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 670646bebb3cbaa4b8ae67fc6db8a9ef, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/G_ScriptableObject/castle.asset
+Dependencies: []

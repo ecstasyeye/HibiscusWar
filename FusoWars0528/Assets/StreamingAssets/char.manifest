@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2343721066
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 22f17bfc2160fb9eee057fadd55b4925
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c777959e2e5dab126edcb4a9d4ace2c8
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 0edb7f129169c0b4c8f1613f96e52042, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6e556f64a4dc75547b4641aca32e0559, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/G_ScriptableObject/Char.asset
+Dependencies: []

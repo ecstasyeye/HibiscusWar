@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 32543660
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: castle_connect
+      Dependencies: {}
